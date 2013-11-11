@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EmtecZap</string>
+    <string name="menu_settings">Preferences</string>
+    <string name="menu_log">Log</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_checklist">Help</string>
+</resources>

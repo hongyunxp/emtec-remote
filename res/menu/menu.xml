@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/menu_settings" android:id="@+id/settings"></item>
+    <item android:title="@string/menu_log" android:id="@+id/log" android:visible="false"></item>
+    <item android:id="@+id/checklist" android:title="@string/menu_checklist"></item>
+</menu>
