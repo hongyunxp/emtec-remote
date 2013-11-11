@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Connection">
+
+        <CheckBoxPreference android:summaryOff="Check to enable automatic discovery of your Movie Cube" android:summaryOn="Automatic discovery of your Movie Cube is enabled." android:title="Automatic host discovery" android:key="auto_discover" android:enabled="true" android:defaultValue="true" android:summary="If automatic discovery is enabled, the remote will try to automatically resolve the IP address of your Movie Cube" /><EditTextPreference
+                android:title="Host"
+                android:summary="Emtec Movie Cube address"
+                android:dialogTitle="Enter the IP address of your Emtec Movie Cube" android:key="host"
+                android:dialogMessage="Example: '192.168.2.101'" />
+                
+        <EditTextPreference
+                android:title="Port"
+                android:summary="Connection port"
+                android:dialogTitle="Enter the port of the connection." android:key="port"
+                android:dialogMessage="Default: '1024'" android:defaultValue="1024"/>
+        
+
+    </PreferenceCategory>
+</PreferenceScreen>

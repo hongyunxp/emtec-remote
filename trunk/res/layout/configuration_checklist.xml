@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+        
+	<LinearLayout 
+	    android:id="@+id/linearLayout2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+	
+		
+		
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Configuration checklist"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <LinearLayout
+	        android:id="@+id/linearLayout1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:paddingLeft="5px"
+	        android:paddingTop="10px">
+	
+	        <TextView
+	            android:id="@+id/textView4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="MovieCube configuration"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:paddingTop="10px" />
+	
+	        <TextView
+	            android:id="@+id/textView5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Go to 'Network Configuration' on your Movie Cube and make sure the following settings are set:"
+	            android:paddingBottom="5px" />
+	
+	        <TextView
+	            android:id="@+id/textView6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="1.) Enable 'Remote Control'"
+	            android:paddingLeft="10px" />
+	
+	        <TextView
+	            android:id="@+id/textView7"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="2.) Optionally configure your Movie Cube with a fixed IP"
+	            android:paddingLeft="10px" />
+	
+	        <TextView
+	            android:id="@+id/textView8"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Device configuration"
+	            android:paddingTop="10px"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	        <TextView
+	            android:id="@+id/textView9"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="The following actions are needed to enable the remote to connect to your Movie Cube:"
+	            android:paddingBottom="5px" />
+	
+	        <TextView
+	            android:id="@+id/textView10"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="1.) Use 'Wifi settings' to connect to your home network"
+	            android:paddingLeft="10px" />
+	        
+	        <TextView
+	            android:id="@+id/textView11"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="2.) Go to 'Preferences' and fill in the IP address and port to your Movie Cube (Note: the remote can also discover your Movie Cube automatically)"
+	            android:paddingLeft="10px" />
+	        
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/linearLayout3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="20px" >
+	
+	        <Button
+	            android:id="@+id/buttonWifi"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Wifi settings"
+	            android:layout_weight="1" />
+	
+	        <Button
+	            android:id="@+id/buttonPreferences"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="Preferences"
+	            android:layout_weight="1" />
+	
+	    </LinearLayout>
+
+	    <Button
+	        android:id="@+id/buttonClose"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Done!"
+	        android:paddingBottom="20px" />
+	
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="FAQ"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:paddingTop="10px" />
+	
+	    <TextView
+	        android:id="@+id/textView12"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Adjust volume:"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:paddingTop="10px"
+	        android:paddingLeft="5px"  />
+	
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Use your device's volume up/down buttons to adjust the Movie Cube volume."
+	        android:paddingTop="5px"
+	        android:paddingLeft="5px" />
+	    
+	    <TextView
+	        android:id="@+id/textView12"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Hostname:"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:paddingTop="10px"
+	        android:paddingLeft="5px"  />
+	
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="You can use 'Emtec' as hostname if supported by your home network. The default port of the Movie Cube is '1024'. If you don't know the IP address of your Movie Cube, check the 'Automatic discovery' box to let the application find it for you."
+	        android:paddingTop="5px"
+	        android:paddingLeft="5px" />
+	    
+	    <TextView
+	        android:id="@+id/textView13"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Speed:"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:paddingTop="10px"
+	        android:paddingLeft="5px"  />
+	
+	    <TextView
+	        android:id="@+id/textView14"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="For best performance, use a static IP for your Movie Cube. Dynamic IP addresses change and it takes time to find the address automatically."
+	        android:paddingTop="5px"
+	        android:paddingLeft="5px" />
+
+	</LinearLayout>
+	
+</ScrollView>
