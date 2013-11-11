@@ -1,0 +1,87 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function appendTextToBody(text)
+{
+  var body = document.getElementsByTagName('body')[0];
+  var div = document.createElement('div');
+  var container = document.createTextNode(text);
+  div.appendChild(container);
+  body.appendChild(div);
+}
+
+function issueCommand(cmd)
+{
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open('POST', 'http://emtec:1024/cgi-bin/cubermctrl.cgi?id=1&amp;cmd=' + cmd, true);
+  xmlhttp.onreadystatechange = function()
+  {
+    appendTextToBody(xmlhttp.readyState);
+  }
+  xmlhttp.send();
+}
+
+function goLeft()
+{
+  issueCommand('CMD_LEFT');
+}
+
+function goRight()
+{
+  issueCommand('CMD_RIGHT');
+}
+
+function goUp()
+{
+  issueCommand('CMD_UP');
+}
+
+function goDown()
+{
+  issueCommand('CMD_DOWN');
+}
+
+function goDiagonal()
+{
+  goRight();
+  goDown();
+}
+
+function goDiagonalALot()
+{
+  var count = 0;
+  while (count < 5)
+  {
+    goDiagonal();
+    count = count + 1;
+  }
+}
+
+var timedCount = 0;
+function goUpTimed(max)
+{
+  goUp();
+  timedCount = timedCount + 1;
+  if (timedCount < max)
+  {
+    setTimeout("goUpTimed(" + max + ")", 50);
+  }
+}
+
+function goUpALot()
+{
+  var count = 0;
+  while (count < 2)
+  {
+    goUp();
+    count = count + 1;
+  }
+}
+
+</script>
+</head>
+<body onload="goUpTimed(100);">
+
+</body>
+</html>
